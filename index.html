@@ -1,1 +1,138 @@
-<h1> Hi </h1>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Daniel Mendelevitch</title>
+
+    <meta name="author" content="Daniel Mendelevitch">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Daniel Mendelevitch
+                </p>
+                <p>Hi!👋 I'm currently a research engineer at <a href="https://stability.ai/">Stability AI</a>, working on generative video models. I'm also a 3rd year undergrad at <a href="https://www.ucla.edu">UCLA</a>. I expect to graduate early 2025.
+                </p>
+                <p>
+                  At Stability, I've primarily been working on <a href="https://stability.ai/news/stable-video-diffusion-open-ai-video-model">Stable Video Diffusion</a>. I'm super interested in generative video models and video representation learning.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:daniel.mendelevitch@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=gjHGrrMAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/danielmend_">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/danielmend">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/me.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/me.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="recon_stop()" onmouseover="recon_start()"   >
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/svd.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+        </div>
+        <script type="text/javascript">
+          function recon_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function recon_stop() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+          recon_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://stability.ai/news/stable-video-diffusion-open-ai-video-model">
+            <span class="papertitle">Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets</span>
+        </a>
+        <br>
+        Andreas Blattmann*, Tim Dockhorn*, Sumith Kulal*, <strong>Daniel Mendelevitch</strong>, Maciej Kilian, Dominik Lorenz, Yam Levi, Zion English, Vikram Voleti, Adam Letts, Varun Jampani, Robin Rombach
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt">(weights)</a>
+        /
+        <a href="https://arxiv.org/abs/2311.15127">(paper)</a>
+        <p></p>
+        <p>
+        A generative text-to-video and image-to-video model scaled to a large pre-training dataset. We explore the impact of different data-filtering and synthetic captioning techniques to train powerful foundation video models.
+        </p>
+      </td>
+    </tr>
+
+
+    </table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/v2ds.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/iejMac/video2dataset">
+            <span class="papertitle">Video2dataset</span>
+        </a>
+        <br>
+        Maciej Kilian, Romain Beaumont, <strong>Daniel Mendelevitch</strong>, Sumith Kulal, Andreas Blattmann
+        <a href="https://laion.ai/blog/video2dataset/">(blogpost)</a>
+        <p> </p>
+        <p>
+        A tool to easily create large-scale video datasets from urls.
+        </p>
+      </td>
+    </tr>
+
+
+    </table>
+
+<p style="text-align:right;font-size:small;">
+  Code borrowed from  <a href="https://github.com/jonbarron/jonbarron_website">John Barron</a> 😅
+</p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
