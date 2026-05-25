@@ -6,96 +6,166 @@
   <title>Daniel Mendelevitch</title>
   <meta name="description" content="Daniel Mendelevitch - research scientist interested in efficient image/video tokenization and representation learning." />
   <meta name="author" content="Daniel Mendelevitch" />
+
   <style>
     html, body {
       height: 100%;
       margin: 0;
       background: #ffffff;
-      color: #000000;
+      color: #111111;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.55;
     }
+
     .wrap {
       max-width: 900px;
       margin: 80px auto;
       padding: 0 24px;
     }
+
     h1 {
       text-align: center;
-      font-size: 40px;
-      margin-bottom: 40px;
+      font-size: 38px;
+      font-weight: 650;
+      letter-spacing: -0.03em;
+      margin: 0 0 42px;
     }
+
     .hero {
       display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 32px;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 36px;
       align-items: start;
     }
-    @media (max-width: 700px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .portrait {
-        justify-self: center;
-      }
+
+    .bio {
+      max-width: 560px;
     }
+
+    p {
+      font-size: 16.5px;
+      margin: 0 0 14px;
+    }
+
+    a,
+    a:visited {
+      color: #0000ee;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
     img.portrait {
       width: 100%;
       max-width: 300px;
       border-radius: 12px;
     }
-    p {
-      font-size: 18px;
-      margin: 0;
-    }
-    a {
-      color: blue;
-      text-decoration: underline;
-    }
-    a:hover {
-      text-decoration: none;
-    }
+
     .links {
-      margin-top: 16px;
-      font-size: 16px;
-      color: gray;
+      margin-top: 22px;
+      font-size: 15px;
+      color: #666;
+      white-space: nowrap;
     }
-    .links a {
-      color: gray;
+
+    .links a,
+    .links a:visited {
+      color: #666;
       text-decoration: none;
     }
+
     .links a:hover {
       text-decoration: underline;
     }
+
     .dot {
       margin: 0 8px;
+      color: #777;
+    }
+
+    .email {
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .email-address {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        margin: 48px auto;
+      }
+
+      h1 {
+        font-size: 30px;
+        margin-bottom: 28px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .portrait {
+        justify-self: center;
+        order: -1;
+      }
+
+      .bio {
+        max-width: none;
+      }
+
+      .links {
+        white-space: normal;
+        line-height: 1.8;
+      }
     }
   </style>
 </head>
+
 <body>
   <main class="wrap" aria-label="Profile">
     <h1>Daniel Mendelevitch</h1>
+
     <section class="hero">
-      <div>
+      <div class="bio">
         <p>
-        I'm a researcher working at <a href="https://runwayml.com/">Runway</a>.
-        Previously, I worked on <a href="https://lumalabs.ai/">training video models</a> at Luma and on <a href="https://arxiv.org/abs/2311.15127">scaling video datasets</a> at Stability. 
-        I'm interested in representation learning, generative models, and how models learn useful structure from data.
-        Not too long ago, I studied math and statistics at UCLA.
-        Outside of ML, I love playing <a href="https://lichess.org/@/n1nja">chess</a>, going on runs, and traveling :) 
+          I'm a researcher at <a href="https://runwayml.com/">Runway</a>.
+          Previously, I worked on training video models at <a href="https://lumalabs.ai/">Luma</a>
+          and on <a href="https://arxiv.org/abs/2311.15127">scaling video datasets</a> at Stability.
         </p>
+
+        <p>
+          I'm super interested in the structures and representations neural nets learn from data.
+          I studied math and statistics at UCLA.
+        </p>
+
+        <p>
+          Outside of ML, I love playing <a href="https://lichess.org/@/n1nja">chess</a>,
+          going on runs, and traveling :)
+        </p>
+
         <p class="links">
-          <a href="mailto:daniel.mendelevitch@gmail.com">Email</a>
-          <span class="dot">·</span>
           <a href="https://twitter.com/danielmend_" target="_blank" rel="noopener">Twitter</a>
           <span class="dot">·</span>
           <a href="https://github.com/danielmend" target="_blank" rel="noopener">GitHub</a>
           <span class="dot">·</span>
           <a href="https://scholar.google.com/citations?user=gjHGrrMAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+          <span class="dot">·</span>
+          <span class="email">
+            Email:
+            <span class="email-address">daniel.mendelevitch at gmail</span>
+          </span>
         </p>
       </div>
-      <img src="images/me.jpg" class="portrait" loading="eager" />
+
+      <img src="images/me.jpg" class="portrait" alt="Daniel Mendelevitch" loading="eager" />
     </section>
   </main>
 </body>
